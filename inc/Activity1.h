@@ -1,5 +1,5 @@
-#ifndef __PROJECT_CONFIG_H__
-#define __PROJECT_CONFIG_H__
+#ifndef __ACTIVITY1_H__
+#define __ACTIVITY1_H__
 /**
  * @file project_config.h
  * @author AQUIL RODRIGUES ()
