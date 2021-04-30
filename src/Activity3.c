@@ -1,6 +1,13 @@
 #include "Activity3.h"
 
-uint16_t Activity3(uint8_t temp)
+/**
+ * @brief This takes the decimle value from sensor and gives corresponding PWM output.
+ * 
+ * @param temp This is the decimel value from the sensor.
+ * @return uint16_t 
+ */
+
+uint16_t Activity3(uint16_t temp)
 {
 TCCR0A |=(1<<COM0A1)|(1<<WGM00)|(1<<WGM01);
 TCCR0B |= (1<<CS01)|(1<<CS00); // prescalar 255

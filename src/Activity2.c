@@ -6,7 +6,12 @@ void InitADC()
     ADMUX=(1<<REFS0); // to make aref= avcc ie 5v doubt? why refs1 not made 0
     ADCSRA=(1<<ADEN)|(7<<ADPS0); // to select the sampling frequency and to enable enable bit to make it analog channel
 }
-
+/**
+ * @brief This function is used to select a channel for ADC reading.
+ * 
+ * @param ch This is the channel number.
+ * @return uint16_t 
+ */
 uint16_t Activity2(uint8_t ch)
 {
     ADMUX&=0xf8; // to put 000 for those 3 mux bits

@@ -1,5 +1,10 @@
 #include "Activity1.h"
 
+/**
+ * @brief This function is used to Glow a led if both switches are turned ON.
+ * 
+ */
+
 void Activity1()
 {
 
