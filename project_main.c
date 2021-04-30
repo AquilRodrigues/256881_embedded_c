@@ -23,7 +23,7 @@ SWITCH_PORT |= (1<<HEATER_SWITCH);
 
     while(1){
             if(!(PIND &(1<<SEAT_SWITCH)) && !(PIND &(1<<HEATER_SWITCH) )){
-                LED_PORT |= (1<<LED_PIN);
+                Activity1();
                 temp = Activity2(2);
                 tempc = Activity3(temp);
                 Activity4(tempc);

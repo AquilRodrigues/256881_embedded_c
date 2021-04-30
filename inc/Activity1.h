@@ -24,6 +24,8 @@
 #define SEAT_SWITCH (PORTD0)
 #define HEATER_SWITCH (PORTD1)
 
+void Activity1();
+
 /* a*/
 
 #endif /* __PROJECT_CONFIG_H__ */
