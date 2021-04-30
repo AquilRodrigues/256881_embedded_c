@@ -1,12 +1,27 @@
-
+/**
+ * @file project_main.c
+ * @author Aquil Rodrigues (aquil.ee17@bmsce.ac.in)
+ * @brief This is the main 
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "Activity1.h"
 #include "Activity2.h"
 #include "Activity3.h"
 #include "Activity4.h"
 
 #include "user_utils.h"
+
+
 int main(void)
 {
+     /**
+      * @brief This initialiazes the ports and pins to take input from switches and give output to the led.
+      * 
+      */
 DDRB |= (1<<LED_PIN); //set BO = 1
 DDRD &= ~(2<<SEAT_SWITCH);
 SWITCH_PORT |= (1<<SEAT_SWITCH);

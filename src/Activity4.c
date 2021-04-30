@@ -13,7 +13,7 @@ void USARTInit(uint16_t ubrr_value)
 
 
 /**
- * @brief This is used to Display the temperature reading on serial monitor.
+ * @brief This is used to read serial input.
  * 
  * @param data 
  * @return uint16_t 
@@ -30,7 +30,11 @@ uint16_t USARTReadChar(uint16_t data)
     return UDR0 ;
 }
 
-
+/**
+ * @brief This function is used to display output.
+ * 
+ * @param data 
+ */
 void Activity4(char data)
 {
 

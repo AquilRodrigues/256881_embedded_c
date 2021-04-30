@@ -20,8 +20,8 @@
 
 #define LED_PORT (PORTB)    /**< LED Port Number */
 #define LED_PIN  (PORTB0)   /**< LED Pin number  */
-#define SWITCH_PORT (PORTD)
-#define SEAT_SWITCH (PORTD0)
+#define SWITCH_PORT (PORTD) /**< Switch port */
+#define SEAT_SWITCH (PORTD0) 
 #define HEATER_SWITCH (PORTD1)
 
 void Activity1();
