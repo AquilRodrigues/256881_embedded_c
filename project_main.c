@@ -39,6 +39,9 @@ SWITCH_PORT |= (1<<HEATER_SWITCH);
 
     while(1){
             if(!(PIND &(1<<SEAT_SWITCH)) && !(PIND &(1<<HEATER_SWITCH) )){
+                 uint16_t temp=0;
+                 uint16_t tempc=0;
+
                 Activity1();
                 temp = Activity2(2);
                 tempc = Activity3(temp);
